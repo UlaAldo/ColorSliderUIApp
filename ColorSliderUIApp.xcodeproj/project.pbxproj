@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C162F06427FD36BD0081BCFD /* SliderStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162F06327FD36BD0081BCFD /* SliderStack.swift */; };
+		C162F06627FD39BE0081BCFD /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162F06527FD39BE0081BCFD /* ColorView.swift */; };
 		C1C9050027F2EE75005BC729 /* ColorSliderUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C904FF27F2EE75005BC729 /* ColorSliderUIAppApp.swift */; };
 		C1C9050227F2EE75005BC729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9050127F2EE75005BC729 /* ContentView.swift */; };
 		C1C9050427F2EE76005BC729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C9050327F2EE76005BC729 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C162F06327FD36BD0081BCFD /* SliderStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderStack.swift; sourceTree = "<group>"; };
+		C162F06527FD39BE0081BCFD /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		C1C904FC27F2EE75005BC729 /* ColorSliderUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSliderUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C904FF27F2EE75005BC729 /* ColorSliderUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderUIAppApp.swift; sourceTree = "<group>"; };
 		C1C9050127F2EE75005BC729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				C1C904FF27F2EE75005BC729 /* ColorSliderUIAppApp.swift */,
 				C1C9050127F2EE75005BC729 /* ContentView.swift */,
+				C162F06527FD39BE0081BCFD /* ColorView.swift */,
+				C162F06327FD36BD0081BCFD /* SliderStack.swift */,
 				C1C9050327F2EE76005BC729 /* Assets.xcassets */,
 				C1C9050527F2EE76005BC729 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C162F06627FD39BE0081BCFD /* ColorView.swift in Sources */,
+				C162F06427FD36BD0081BCFD /* SliderStack.swift in Sources */,
 				C1C9050227F2EE75005BC729 /* ContentView.swift in Sources */,
 				C1C9050027F2EE75005BC729 /* ColorSliderUIAppApp.swift in Sources */,
 			);
