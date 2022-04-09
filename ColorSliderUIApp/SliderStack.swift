@@ -10,6 +10,8 @@ import SwiftUI
 struct SliderStack: View {
     @Binding var value: Double
     @State private var num = ""
+    @State private var alert = false
+    
     let color: Color
     
     
@@ -22,12 +24,21 @@ struct SliderStack: View {
                     .onChange(of: value) { newValue in
                         num = "\(lround(newValue))"
                     }
-                TextField("\(lround(value))", text: $num)
+                TextField("\(lround(value))", text: $num) { checkNum() }
                     .frame(width: 60, height: 30)
                     .background(Color.white)
                     .cornerRadius(8)
                     .multilineTextAlignment(.center)
-                    
+                    .alert("Wrong format", isPresented: $alert, actions: {}) { Text("Use the numeric format: 0 - 255") }
+        }
+      
+    }
+    private func checkNum(){
+        if let num = Int(num), (0...255).contains(num) {
+            value = Double(num)
+        } else {
+            alert.toggle()
+            num = ""
         }
     }
 }
